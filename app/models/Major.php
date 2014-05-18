@@ -10,4 +10,8 @@ class Major extends \Eloquent {
 	// Don't forget to fill this array
 	protected $fillable = ['name', 'degree', 'hour_price'];
 
+    public function students(){
+        return $this->hasMany('Student');
+    }
+
 }

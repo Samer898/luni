@@ -9,9 +9,9 @@ class StudentsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$students = Student::all();
+    	$students = Student::all();
 
-		return View::make('students.index', compact('students'));
+        return View::make('students.index', compact('students'));
 	}
 
 	/**

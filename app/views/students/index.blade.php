@@ -21,7 +21,7 @@
         <tr>
             <td>{{ $student->first_name }}</td>
             <td>{{ $student->last_name }}</td>
-            <td>{{ $student->major_id }}</td>
+            <td>{{ $student->major->name }}</td>
             <td>{{ $student->uni_id }}</td>
             <td>{{ $student->nati_id }}</td>
             <td>{{ $student->date_of_birth }}</td>

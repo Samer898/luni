@@ -10,4 +10,8 @@ class Student extends \Eloquent {
 	// Don't forget to fill this array
 	protected $fillable = ['uni_id', 'nati_id', 'first_name', 'last_name', 'major_id', 'date_of_birth'];
 
+    public function major(){
+        return $this->belongsTo('Major');
+    }
+
 }
