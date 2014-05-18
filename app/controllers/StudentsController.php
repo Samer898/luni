@@ -68,7 +68,9 @@ class StudentsController extends \BaseController {
 		$student = Student::find($id);
 		$majors = Major::all();
 
-		return View::make('students.edit', array(compact('student'), compact('majors')));
+		return View::make('students.edit')
+            ->with('student', $student)
+            ->with('majors', $majors);
 	}
 
 	/**
