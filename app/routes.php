@@ -19,3 +19,5 @@ Route::get('/', function()
 Route::resource('majors', 'MajorsController');
 Route::resource('students', 'StudentsController');
 Route::resource('courses', 'CoursesController');
+Route::resource('schedules', 'SchedulesController');
+Route::resource('semesters', 'SemestersController');
