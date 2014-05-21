@@ -29,6 +29,13 @@
                             <li>{{ link_to_route('students.create', 'Create', $parameters = array(), $attributes = array()); }}</li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>{{ link_to_route('courses.index', 'View', $parameters = array(), $attributes = array()); }}</li>
+                            <li>{{ link_to_route('courses.create', 'Create', $parameters = array(), $attributes = array()); }}</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
